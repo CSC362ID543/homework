@@ -1,0 +1,53 @@
+<!--data.html-->
+<body>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+  <!-- Set up basic webpage structure -->
+  <div id="header"></div>
+  <div id="nominal"></div>
+  <div id="ordinal"></div>
+  <div id="interval"></div>
+  <div id="ratio"></div>
+
+  <style>
+    .red {
+        color: white;
+        background-color: #e41a1c;
+    }
+    .green {
+        color: #4daf4a;
+    }
+    .blue {
+        color: white;
+        background-color: #377eb8;
+    }
+    .purple {
+        color: #984ea3;
+    }
+  </style>
+
+  <script>
+    d3.select('#header')
+    .insert("h1", '*')
+    .text("Welcome! This webpage offers descriptions various data types");
+
+    d3.select('#nominal')
+      .insert("h3", '*')
+      .text("Nominal- A data type that uses labels and does not provide quantitative value. For example, you could consider a survey asking what languages oen speaks can be considered nominal data.");
+
+    d3.select('#ordinal')
+      .insert("h3", '*')
+      .text("Ordinal- A data type that relies on the order of the values nad is typically non-numeric. An example of ordinal data can simply be collecting data about the four grade levels in undergraduate schooling");
+
+    d3.select('#interval')
+      .insert("h3", '*')
+      .text("Interval- A data type which has numeric values except for the value of 0. For instance, ring sizes could be considered interval data.");
+
+    d3.select('#ratio')
+      .insert("h3", '*')
+      .text("Ratio-  A data type that inclues ratio scales, a zero value, and numeric values. The amount of pets families have is an example of ratio data.");
+
+
+  </script>
+
+</body>
