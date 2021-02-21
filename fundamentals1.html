@@ -15,26 +15,26 @@
     <script src="https://d3js.org/d3.v6.min.js"></script>
 
     <script>
-     const array = [];
-     function factoring(int){
-          for(var i = int ; i > 0; i--){
-            if((int %i)==0){
-                array.push(i)
-            }
+         const array = [];
+         function factoring(int){
+              for(var i = int ; i > 0; i--){
+                if((int %i)==0){
+                    array.push(i)
+                }
+              }
+              return array;
           }
-          return array;
-      }
-        const updatedArray= factoring(12);
-        d3.select(#chart)
-          .selectAll("circle")
-          .data(updatedArray)
-          .enter()
-          .append("circle")
-            .attr("r", d=>d)
-            .attr("cx", d=>d*10)
-            .attr("cy", 100)
-            .attr("fill", "blue")
-            .attr("stroke", "purple")
+            const updatedArray= factoring(12);
+            d3.select(#chart)
+              .selectAll("circle")
+              .data(updatedArray)
+              .enter()
+              .append("circle")
+                .attr("r", d=>d)
+                .attr("cx", d=>d*10)
+                .attr("cy", 100)
+                .attr("fill", "blue")
+                .attr("stroke", "purple")
 
     </script>
 </body>
