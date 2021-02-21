@@ -22,9 +22,10 @@
                 array.push(i)
             }
           }
-        console.log(array)
-        var svg = d3.select("body").select("svg");
-        svg.selectAll("circle")
+      }
+        const updatedArray= factoring(12);
+        d3.select(#chart)
+          .selectAll("circle")
           .data(array)
           .enter()
           .append("circle")
@@ -33,7 +34,6 @@
             .attr("cx", d=>d*10)
               .style("fill", "blue")
               .style("stroke", "purple")
-        }
 
     </script>
 </body>
