@@ -15,10 +15,10 @@
     <script src="https://d3js.org/d3.v6.min.js"></script>
 
     <script>
-      const array = [];
+     const array = [];
      function factoring(int){
           for(var i = int ; i > 0; i--){
-            if(int %(int)==0){
+            if((int %int)==0){
                 array.push(i)
             }
           }
@@ -31,10 +31,10 @@
           .enter()
           .append("circle")
             .attr("r", d=>d)
-            .attr("cy", 100)
             .attr("cx", d=>d*10)
-              .style("fill", "blue")
-              .style("stroke", "purple")
+            .attr("cy", 100)
+            .attr("fill", "blue")
+            .attr("stroke", "purple")
 
     </script>
 </body>
