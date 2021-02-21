@@ -16,17 +16,18 @@
 
     <script>
       const array = [];
-      var factoring = function(int){
+     function factoring(int){
           for(var i = int ; i > 0; i--){
             if(int %(int)==0){
                 array.push(i)
             }
           }
+          return array;
       }
         const updatedArray= factoring(12);
         d3.select(#chart)
           .selectAll("circle")
-          .data(array)
+          .data(updatedArray)
           .enter()
           .append("circle")
             .attr("r", d=>d)
