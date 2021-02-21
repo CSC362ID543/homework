@@ -5,6 +5,7 @@
     radius is based off of the factors of the integer entered.
 
     Created on : Feburary 6, 2021, 3:13 PM
+    Updated on: Feburary 20, 2021 8:24 PM
 -->
 <!--index.html-->
 <!-- page 12 D3.js -->
@@ -14,26 +15,25 @@
     <script src="https://d3js.org/d3.v6.min.js"></script>
 
     <script>
-    const d = prompt('Please enter an integer');
-    const factors => d => {
-      const nums = [];
-      for(let i = d; i < 0; i--){
-          if(d/i === 0){
-           nums.push(i);
+      const array = [];
+      var factoring = function(int){
+          for(var i = int ; i > 0; i--){
+            if(int %(int)==0){
+                array.push(i)
+            }
           }
-      }
-      return nums;
-    }
-
-    d3.select("svg")
-      .select("circle")
-      .data(factors(d))
-      .enter()
-      .append("circle")
-        .attr("r", d => d)
-        .attr("cy", 150)
-        .attr("cx", d => (10*d))
-        .style("stroke", "green")
+        console.log(array)
+        var svg = d3.select("body").select("svg");
+        svg.selectAll("circle")
+          .data(array)
+          .enter()
+          .append("circle")
+            .attr("r", d=>d)
+            .attr("cy", 100)
+            .attr("cx", d=>d*10)
+              .style("fill", "blue")
+              .style("stroke", "purple")
+        }
 
     </script>
 </body>
