@@ -4,6 +4,7 @@
       This produces animates a series of circle's
 
       Created on Feburary 6, 8:00pm
+      Updated on Feburary 20, 8:00pm
 -->
 <!--index.html-->
 <!-- page 12 D3.js-->
@@ -14,23 +15,24 @@
 
   <script>
       const array = [92, 56, 14, 73, 22, 38, 93, 45, 55];
-
-      d3.select("#chart")
-        .selectAll("circle")
+      var svg = d3.select("body").append("svg")
+      svg.selectAll("circle")
         .data(array)
         .enter()
-        .append("circle")
-            .attr("r", (array[i]/2)) //circle's radius
-            .attr("cy", 100) //position on the y centre
-            .attr("cx", i*100) //position on the x centre
+        .append("circle") 
+          .attr("r", d =>d/2)
+          .attr("cx", function(d,i) {return(100*i)+50})
+          .attr("cy", 50)
+            .style("fill", "red")
+            .style("stroke", "purple");
 
-        setTimeout(function() {
-         d3.select("#chart").selectAll("circle")
-         .data([14, 22, 38, 45, 55, 56, 73, 92, 93])
-         .transition().duration(1000)
-            .attr("r", (array[i]/2)*)
-            .attr("cx", i*100)
-        }, 2000)
+
+      setTimeout(function() {
+          svg.selectAll("circle")
+              .data(array.sort())
+              .transition().duration(1500)
+              .attr("r", d=>d/2)
+      }, 2000)
 
   </script>
 </body>
