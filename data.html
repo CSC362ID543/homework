@@ -27,17 +27,20 @@
   </style>
 
   <script>
+    //The following is the page's main header
     d3.select('#header').classed("blue", true)
       .insert("h1", '*')
       .text("Welcome! This webpage offers descriptions various data types");
     
+    //Header for nominal data
     d3.select('#nominal').classed("red", true)
       .insert("h3", '*')
       .text("Nominal:");
       d3.select('#nominal').classed("red", true)
         .insert("h3", '*')
         .text("Nominal- A data type that uses labels and does not provide quantitative value. For example, you could consider a survey asking what languages one speaks can be considered nominal data.");
-
+    
+    //header for ordinal data
     d3.select('#ordinal').classed("green", true)
        insert("h3", '*')
       .text("Nominal:");
@@ -45,6 +48,7 @@
         .insert("h3", '*')
         .text("Ordinal- A data type that relies on the order of the values nad is typically non-numeric. An example of ordinal data can simply be collecting data about the four grade levels in undergraduate schooling");
 
+    //header for interval data
     d3.select('#interval').classed("black", true)
       insert("h3", '*')
       .text("interval:");
@@ -52,6 +56,7 @@
         .insert("h3", '*')
         .text("Interval- A data type which has numeric values except for the value of 0. For instance, ring sizes could be considered interval data.");
 
+    //header for ratio data
     d3.select('#ratio').classed("yellow", true)
       insert("h3", '*')
       .text("Nominal:");
