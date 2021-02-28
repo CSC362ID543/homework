@@ -31,11 +31,11 @@
       .insert("h1", '*')
       .text("Welcome! This webpage offers descriptions various data types");
 
-    d3.select('#nominal').attr("style", "color: #C6D4FF")
+    d3.select('#nominal').attr("red", true)
       .insert("h3", '*')
       .text("Nominal- A data type that uses labels and does not provide quantitative value. For example, you could consider a survey asking what languages one speaks can be considered nominal data.");
 
-    d3.select('#ordinal').attr("style", "color: #307473")
+    d3.select('#ordinal').classed("green", true)
       .insert("h3", '*')
       .text("Ordinal- A data type that relies on the order of the values nad is typically non-numeric. An example of ordinal data can simply be collecting data about the four grade levels in undergraduate schooling");
 
