@@ -27,23 +27,23 @@
   </style>
 
   <script>
-    d3.select('#header').classed("blue", true)
+    d3.select('#header').classed("#A3C193", true)
     .insert("h1", '*')
     .text("Welcome! This webpage offers descriptions various data types");
 
-    d3.select('#nominal')
+    d3.select('#nominal').classed("#54430A", true)
       .insert("h3", '*')
       .text("Nominal- A data type that uses labels and does not provide quantitative value. For example, you could consider a survey asking what languages oen speaks can be considered nominal data.");
 
-    d3.select('#ordinal')
+    d3.select('#ordinal').classed("#5E85E7", true)
       .insert("h3", '*')
       .text("Ordinal- A data type that relies on the order of the values nad is typically non-numeric. An example of ordinal data can simply be collecting data about the four grade levels in undergraduate schooling");
 
-    d3.select('#interval')
+    d3.select('#interval').classed("#E7C75E", true)
       .insert("h3", '*')
       .text("Interval- A data type which has numeric values except for the value of 0. For instance, ring sizes could be considered interval data.");
 
-    d3.select('#ratio')
+    d3.select('#ratio').classed("#DBE75E", true)
       .insert("h3", '*')
       .text("Ratio-  A data type that inclues ratio scales, a zero value, and numeric values. The amount of pets families have is an example of ratio data.");
 
