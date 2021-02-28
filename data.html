@@ -29,11 +29,12 @@
   <script>
     d3.select('#header').classed("blue", true)
       .insert("h1", '*')
+      .style("font-size", "20px")
       .text("Welcome! This webpage offers descriptions various data types");
 
-    d3.select('#nominal').css({'background-color':'black'})
+    d3.select('#nominal').classed("blue", true)
       .insert("h3", '*')
-      .text("Nominal- A data type that uses labels and does not provide quantitative value. For example, you could consider a survey asking what languages oen speaks can be considered nominal data.");
+      .text("Nominal- A data type that uses labels and does not provide quantitative value. For example, you could consider a survey asking what languages one speaks can be considered nominal data.");
 
     d3.select('#ordinal').classed("yellow", true)
       .insert("h3", '*')
