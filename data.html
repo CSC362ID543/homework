@@ -11,19 +11,24 @@
 
   <style>
     .red {
-        color: blue;
+        color: white;
         background-color: #d98283;
     }
     .green {
-        color: #4daf4a;
+        color: black;
+        background-color: #e5fcae;
     }
     .blue {
-        color: red;
-        background-color: #377eb8;
+        color: white;
+        background-color: #8d95c2;
     }
     .purple {
-        color: #dcaefc;
+        color: white;
+        background-color: #dcaefc;
     }
+    .tan { 
+        color: black;
+        background-color: #e3c7a3;
   </style>
 
   <script>
@@ -39,7 +44,7 @@
       .text("Nominal- A data type that uses labels and does not provide quantitative value. For example, you could consider a survey asking what languages one speaks can be considered nominal data.");
 
     <!--header for ordinal data-->
-    d3.select('#ordinal').classed("black", true)
+    d3.select('#ordinal').classed("tan", true)
       .insert("h3", '*')
       .text("Ordinal- A data type that relies on the order of the values nad is typically non-numeric. An example of ordinal data can simply be collecting data about the four grade levels in undergraduate schooling");
 
