@@ -66,16 +66,25 @@
     d3.select('#ordinal').classed("tan", true)
       .insert("p", '*')
       .text("Ordinal- A data type that relies on the order of the values and is typically non-numeric. An example of ordinal data can simply be collecting data about the four grade levels in undergraduate schooling");
+    d3.select('#ordainal').classed("header", true)
+      .insert("h3", '*')
+      .text("Ordinal:");
 
     <!--header for interval data-->
     d3.select('#interval').classed("red", true)
       .insert("p", '*')
       .text("Interval- A data type which has numeric values except for the value of 0. For instance, ring sizes could be considered interval data.");
+    d3.select('#interval').classed("header", true)
+      .insert("h3", '*')
+      .text("Interval:");
 
     <!--header for ratio data-->
     d3.select('#ratio').classed("purple", true)
       .insert("p", '*')
-      .text("Ratio-  A data type that inclues ratio scales, a zero value, and numeric values. The amount of pets families have is an example of ratio data.")
+      .text("Ratio-  A data type that inclues ratio scales, a zero value, and numeric values. The amount of pets families have is an example of ratio data.");
+    d3.select('#ratio').classed("header", true)
+      .insert("h3", '*')
+      .text("Ratio:");
   </script>
 
 </body>
